@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandip Deshmukh | Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+        .soft-shape {
+            background: #e7f3ed;
+            border-radius: 50%;
+        }
+
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px #164e6320;
+        }
+
+        .fade-in {
+            animation: appear 0.9s ease both;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#fcfdf9] text-[#163b56] font-sans">
+    <header class="sticky top-0 z-50 bg-white/95 border-b border-emerald-100 backdrop-blur">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <a href="#home" class="flex items-center gap-3">
+                <i class="ri-landscape-line text-4xl text-teal-800"></i>
+                <div>
+                    <h1 class="font-bold text-lg leading-tight">Sandip Deshmukh</h1>
+                    <p class="text-xs text-slate-500">Surveyor | DGPS Operator</p>
+                </div>
+            </a>
+
+            <div id="menu"
+                 class="hidden md:flex flex-col md:flex-row gap-5 absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent px-6 md:px-0 py-5 md:py-0 shadow-md md:shadow-none">
+
+                <a href="#home" class="hover:text-teal-700">Home</a>
+                <a href="#about" class="hover:text-teal-700">About</a>
+                <a href="#skills" class="hover:text-teal-700">Skills</a>
+                <a href="#experience" class="hover:text-teal-700">Experience</a>
+                <a href="#projects" class="hover:text-teal-700">Projects</a>
+                <a href="#education" class="hover:text-teal-700">Education</a>
+                <a href="#contact" class="hover:text-teal-700">Contact</a>
+            </div>
+
+            <button id="menuBtn"
+                    class="md:hidden text-2xl text-teal-800"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                <i class="ri-menu-3-line"></i>
+            </button>
+        </nav>
+    </header>
+    <section id="home" class="relative overflow-hidden">
+        <div class="absolute -left-16 top-10 soft-shape w-48 h-48 opacity-70"></div>
+        <div class="absolute right-10 bottom-5 soft-shape w-24 h-24 opacity-70"></div>
+
+        <div class="max-w-6xl mx-auto px-6 py-12 md:py-16 grid md:grid-cols-2 gap-12 items-center">
+
+            <div class="fade-in">
+                <p class="uppercase tracking-[3px] text-teal-700 font-semibold text-sm mb-4">
+                    Hello, I'm
+                </p>
+
+                <h2 class="text-4xl md:text-6xl font-bold leading-tight">
+                    Sandip Dayanand
+                    <span class="block">Deshmukh</span>
+                </h2>
+
+                <p class="text-lg text-slate-600 mt-4">
+                    DGPS Operator <span class="text-teal-600">|</span>
+                    ETS Assistant <span class="text-teal-600">|</span>
+                    Auto CAD Operator
+                </p>
+
+                <p class="text-slate-500 leading-7 mt-4 max-w-lg">
+                    Experienced in surveying, mapping and civil projects,
+                    with a focus on accurate measurements, detailed fieldwork
+                    and quality results.
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-7">
+                    <a href="resume.pdf" download
+                       class="inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white px-6 py-3 rounded-full transition">
+                        <i class="ri-download-line"></i>
+                        Download Resume
+                    </a>
+
+                    <a href="#contact"
+                       class="inline-flex items-center gap-2 border border-teal-700 text-teal-800 px-6 py-3 rounded-full hover:bg-emerald-50 transition">
+                        <i class="ri-mail-line"></i>
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="border-t border-emerald-100 bg-white">
+        <div class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-5 gap-10 items-center">
+
+            <div class="md:col-span-2">
+                <img
+                    src="images/img.png"
+                    alt="Landscape fieldwork"
+                    class="rounded-2xl w-full h-72 object-center shadow-sm">
+            </div>
+
+            <div class="md:col-span-3">
+                <p class="text-sm uppercase tracking-widest font-bold text-teal-700">About Me</p>
+                <h2 class="text-3xl font-bold mt-2">Who I Am</h2>
+
+                <p class="text-slate-600 leading-7 mt-4">
+                    I am a dedicated professional with experience in DGPS
+                    surveying, ETS assistance, AutoCAD operations and civil
+                    project work. I value accurate measurements, careful
+                    fieldwork and reliable project results. My experience
+                    also includes working in sales executive roles.
+                </p>
+
+                <div class="grid sm:grid-cols-2 gap-5 mt-7">
+                    <div class="flex gap-3 items-center">
+                        <span class="w-11 h-11 rounded-full bg-emerald-50 flex items-center justify-center text-xl text-teal-700">
+                            <i class="ri-map-pin-line"></i>
+                        </span>
+                        <div>
+                            <p class="font-semibold text-sm">Location</p>
+                            <p class="text-sm text-slate-500">Dhule, Maharashtra 424001</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3 items-center">
+                        <span class="w-11 h-11 rounded-full bg-emerald-50 flex items-center justify-center text-xl text-teal-700">
+                            <i class="ri-phone-line"></i>
+                        </span>
+                        <div>
+                            <p class="font-semibold text-sm">Phone</p>
+                            <a href="tel:8788352584" class="text-sm text-slate-500 hover:text-teal-700">
+                                8788352584
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3 items-center sm:col-span-2">
+                        <span class="w-11 h-11 rounded-full bg-emerald-50 flex items-center justify-center text-xl text-teal-700">
+                            <i class="ri-mail-line"></i>
+                        </span>
+                        <div>
+                            <p class="font-semibold text-sm">Email</p>
+                            <a href="mailto:Sonud2005k@gmail.com" class="text-sm text-slate-500 hover:text-teal-700">
+                                Sonud2005k@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="skills" class="border-t border-emerald-100">
+        <div class="max-w-6xl mx-auto px-6 py-14">
+
+            <p class="text-sm uppercase tracking-widest font-bold text-teal-700">My Skills</p>
+            <h2 class="text-3xl font-bold mt-2 mb-8">Core Skills</h2>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                <div class="rounded-2xl border border-emerald-100 bg-white p-6 flex items-center gap-4 hover:shadow-lg transition">
+                    <div class="w-14 h-14 rounded-full bg-emerald-50 flex items-center justify-center text-3xl text-teal-700">
+                        <i class="ri-crosshair-2-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">DGPS Operator</h3>
+                        <p class="text-sm text-slate-500 mt-1">Surveying</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-emerald-100 bg-white p-6 flex items-center gap-4 hover:shadow-lg transition">
+                    <div class="w-14 h-14 rounded-full bg-sky-50 flex items-center justify-center text-3xl text-sky-700">
+                        <i class="ri-ruler-2-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">ETS Assistant</h3>
+                        <p class="text-sm text-slate-500 mt-1">Field measurements</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-emerald-100 bg-white p-6 flex items-center gap-4 hover:shadow-lg transition">
+                    <div class="w-14 h-14 rounded-full bg-rose-50 flex items-center justify-center text-3xl text-rose-700">
+                        <i class="ri-draft-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">AutoCAD Operator</h3>
+                        <p class="text-sm text-slate-500 mt-1">Technical drawings</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-emerald-100 bg-white p-6 flex items-center gap-4 hover:shadow-lg transition">
+                    <div class="w-14 h-14 rounded-full bg-amber-50 flex items-center justify-center text-3xl text-amber-700">
+                        <i class="ri-team-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Sales Executive</h3>
+                        <p class="text-sm text-slate-500 mt-1">Customer service</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="bg-white border-t border-emerald-100">
+        <div class="max-w-6xl mx-auto px-6 py-14">
+
+            <p class="text-sm uppercase tracking-widest font-bold text-teal-700">My Experience</p>
+            <h2 class="text-3xl font-bold mt-2 mb-8">Work Experience</h2>
+
+            <div class="grid md:grid-cols-2 gap-5">
+
+                <div class="border border-emerald-100 bg-[#f7fbf8] rounded-2xl p-6 flex gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-full bg-emerald-100 text-teal-800 flex items-center justify-center text-2xl">
+                        <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">SAIDEEP CONSULTANT & CONSTRUCTION</h3>
+                        <p class="text-teal-700 mt-1">DGPS Operator</p>
+                        <p class="text-sm text-slate-500 mt-2">24/12/2023 – 10/09/2024</p>
+                        <p class="text-sm text-slate-500 mt-1">
+                            <i class="ri-map-pin-line"></i> Nashik
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border border-emerald-100 bg-[#f7fbf8] rounded-2xl p-6 flex gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-full bg-sky-100 text-sky-800 flex items-center justify-center text-2xl">
+                        <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">DHANK INTER PRICES</h3>
+                        <p class="text-teal-700 mt-1">DGPS Operator</p>
+                        <p class="text-sm text-slate-500 mt-2">06/12/2024 – 02/02/2025</p>
+                        <p class="text-sm text-slate-500 mt-1">
+                            <i class="ri-map-pin-line"></i> Nashik
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border border-emerald-100 bg-[#f7fbf8] rounded-2xl p-6 flex gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-full bg-violet-100 text-violet-800 flex items-center justify-center text-2xl">
+                        <i class="ri-car-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">MAHINDRA Aakash Automotives</h3>
+                        <p class="text-teal-700 mt-1">Sales Executive</p>
+                        <p class="text-sm text-slate-500 mt-2">Dhule, Maharashtra</p>
+                    </div>
+                </div>
+
+                <div class="border border-emerald-100 bg-[#f7fbf8] rounded-2xl p-6 flex gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center text-2xl">
+                        <i class="ri-car-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Ujwal Automotives, Awdhan</h3>
+                        <p class="text-teal-700 mt-1">Sales Executive</p>
+                        <p class="text-sm text-slate-500 mt-2">Dhule, Maharashtra</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="max-w-6xl mx-auto px-6 py-14">
+
+            <p class="text-sm uppercase tracking-widest font-bold text-teal-700">My Projects</p>
+            <h2 class="text-3xl font-bold mt-2 mb-8">Surveying Projects</h2>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                <div class="project-card rounded-2xl border border-emerald-100 bg-[#eef7f1] p-5">
+                    <span class="inline-flex w-10 h-10 rounded-full bg-teal-700 text-white items-center justify-center font-bold">01</span>
+                    <h3 class="font-bold mt-4">PMJSY</h3>
+                    <p class="text-sm text-slate-600 mt-2">Pradhan Mantri Gram Sadak Yojana</p>
+                </div>
+
+                <div class="project-card rounded-2xl border border-emerald-100 bg-[#eef7f1] p-5">
+                    <span class="inline-flex w-10 h-10 rounded-full bg-teal-700 text-white items-center justify-center font-bold">02</span>
+                    <h3 class="font-bold mt-4">MMJSY</h3>
+                    <p class="text-sm text-slate-600 mt-2">Mukhyamantri Gram Sadak Yojana</p>
+                </div>
+
+                <div class="project-card rounded-2xl border border-emerald-100 bg-[#eef7f1] p-5">
+                    <span class="inline-flex w-10 h-10 rounded-full bg-teal-700 text-white items-center justify-center font-bold">03</span>
+                    <h3 class="font-bold mt-4">Shirdi Airport</h3>
+                    <p class="text-sm text-slate-600 mt-2">Contour Survey</p>
+                </div>
+
+                <div class="project-card rounded-2xl border border-emerald-100 bg-[#eef7f1] p-5">
+                    <span class="inline-flex w-10 h-10 rounded-full bg-teal-700 text-white items-center justify-center font-bold">04</span>
+                    <h3 class="font-bold mt-4">Road Projects</h3>
+                    <p class="text-sm text-slate-600 mt-2">Road surveying work</p>
+                </div>
+
+                <div class="project-card rounded-2xl border border-emerald-100 bg-[#eef7f1] p-5">
+                    <span class="inline-flex w-10 h-10 rounded-full bg-teal-700 text-white items-center justify-center font-bold">05</span>
+                    <h3 class="font-bold mt-4">Trivers Survey</h3>
+                    <p class="text-sm text-slate-600 mt-2">Surveying project</p>
+                </div>
+
+                <div class="project-card rounded-2xl border border-emerald-100 bg-[#eef7f1] p-5">
+                    <span class="inline-flex w-10 h-10 rounded-full bg-teal-700 text-white items-center justify-center font-bold">06</span>
+                    <h3 class="font-bold mt-4">Bridge Survey</h3>
+                    <p class="text-sm text-slate-600 mt-2">Bridge-related surveying</p>
+                </div>
+
+                <div class="project-card rounded-2xl border border-emerald-100 bg-[#eef7f1] p-5">
+                    <span class="inline-flex w-10 h-10 rounded-full bg-teal-700 text-white items-center justify-center font-bold">07</span>
+                    <h3 class="font-bold mt-4">Topography Survey</h3>
+                    <p class="text-sm text-slate-600 mt-2">Land surface surveying</p>
+                </div>
+
+                <div class="project-card rounded-2xl border border-emerald-100 bg-[#eef7f1] p-5">
+                    <span class="inline-flex w-10 h-10 rounded-full bg-teal-700 text-white items-center justify-center font-bold">08</span>
+                    <h3 class="font-bold mt-4">Building Lineout</h3>
+                    <p class="text-sm text-slate-600 mt-2">Building layout marking</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="education" class="bg-white border-t border-emerald-100">
+        <div class="max-w-6xl mx-auto px-6 py-14">
+
+            <p class="text-sm uppercase tracking-widest font-bold text-teal-700">Education</p>
+            <h2 class="text-3xl font-bold mt-2 mb-8">Academic Background</h2>
+
+            <div class="grid md:grid-cols-2 gap-5">
+
+                <div class="rounded-2xl border border-emerald-100 bg-[#f7fbf8] p-6 flex gap-4">
+                    <div class="w-14 h-14 shrink-0 rounded-full bg-emerald-100 text-teal-800 flex items-center justify-center text-3xl">
+                        <i class="ri-graduation-cap-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Abhijot Vidhyalay</h3>
+                        <p class="text-sm text-slate-500 mt-1">HSC Board</p>
+                        <p class="text-teal-700 font-semibold mt-3">67% • 2021</p>
+                        <p class="text-sm text-slate-500 mt-1">Dhule, Maharashtra</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-emerald-100 bg-[#f7fbf8] p-6 flex gap-4">
+                    <div class="w-14 h-14 shrink-0 rounded-full bg-emerald-100 text-teal-800 flex items-center justify-center text-3xl">
+                        <i class="ri-graduation-cap-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Maharashtra College</h3>
+                        <p class="text-sm text-slate-500 mt-1">SSC</p>
+                        <p class="text-teal-700 font-semibold mt-3">58% • 2019</p>
+                        <p class="text-sm text-slate-500 mt-1">Dhule, Maharashtra</p>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 rounded-2xl border border-emerald-100 bg-[#eef7f1] p-6 flex gap-4 items-center">
+                    <div class="w-14 h-14 shrink-0 rounded-full bg-white text-teal-800 flex items-center justify-center text-3xl">
+                        <i class="ri-book-open-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Current Education</h3>
+                        <p class="text-slate-600 mt-1">Currently pursuing TY B.Y. (as listed in resume)</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-16 px-6">
+        <div class="max-w-5xl mx-auto rounded-3xl bg-[#eaf5ee] p-8 md:p-12 text-center">
+
+            <p class="text-sm uppercase tracking-widest font-bold text-teal-700">Get In Touch</p>
+
+            <h2 class="text-3xl md:text-4xl font-bold mt-3">
+                Let's Work Together
+            </h2>
+
+            <p class="text-slate-600 max-w-xl mx-auto mt-4 leading-7">
+                Interested in discussing surveying work or professional
+                opportunities? Feel free to contact me.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4 mt-7">
+
+                <a href="mailto:Sonud2005k@gmail.com"
+                   class="bg-teal-700 hover:bg-teal-800 text-white rounded-full px-6 py-3 transition inline-flex items-center gap-2">
+                    <i class="ri-mail-line"></i> Email Me
+                </a>
+
+                <a href="tel:8788352584"
+                   class="bg-white border border-emerald-200 hover:bg-emerald-50 rounded-full px-6 py-3 transition inline-flex items-center gap-2">
+                    <i class="ri-phone-line"></i> Call Me
+                </a>
+
+            </div>
+
+            <p class="text-slate-500 text-sm mt-6">
+                <i class="ri-map-pin-line text-teal-700"></i>
+                Dhule, Maharashtra, India
+            </p>
+
+        </div>
+    </section>
+    <footer class="bg-[#e5f2e9] border-t border-emerald-100">
+        <div class="max-w-6xl mx-auto px-6 py-7 flex flex-col md:flex-row gap-4 items-center justify-between">
+
+            <a href="#home" class="flex items-center gap-2 font-bold text-lg">
+                <i class="ri-landscape-line text-2xl text-teal-800"></i>
+                Sandip Deshmukh
+            </a>
+
+            <p class="text-sm text-slate-600 text-center">
+                Let's Build a Better Tomorrow
+            </p>
+
+            <a href="#home" class="text-teal-800 hover:text-teal-600">
+                Back to top <i class="ri-arrow-up-line"></i>
+            </a>
+
+        </div>
+
+        <div class="text-center text-xs text-slate-500 pb-5">
+            © 2026 Sandip Deshmukh. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
